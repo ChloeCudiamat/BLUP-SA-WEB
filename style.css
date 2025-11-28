@@ -217,9 +217,9 @@ margin-right: 20px;
   font-family: Quintessential;
 }
 
-.bulacan-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs%20memes/1.png?raw=true); }
-.lu-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs%20memes/2.png?raw=true); }
-.pang-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs%20memes/3.png?raw=true); }
+.bulacan-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs/bul2.png?raw=true); }
+.lu-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs/laun2.png?raw=true); }
+.pang-banner { background-image: url(https://github.com/jdtomanan2029/jdtomanan2029.github.io/blob/main/cs/laun2.png?raw=true); }
 
 .attractions-grid {
   display: grid;
@@ -323,7 +323,92 @@ margin-right: 20px;
   font-size: 14px;
   color: #555;
 }
+.authors-section {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+}
 
+.authors-section h2 {
+    font-family: "Quintessential";
+    font-size: 70px;
+    color: #536C4B;
+    margin-bottom: 10px;
+}
+
+.authors-section p {
+    font-size: 20px;
+    font-family: Arial;
+    color: #444;
+    margin-bottom: 60px;
+}
+
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.author-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: 0.35s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.author-card:hover {
+    transform: translateY(-12px) rotate(-1deg);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.author-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #536C4B;
+    margin-bottom: 15px;
+}
+
+.author-card:hover img {
+    animation: floaty 1.5s infinite ease-in-out;
+}
+
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.author-name {
+    font-size: 32px;
+    font-family: "Quintessential";
+    color: #234D6C;
+}
+
+.author-role {
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 15px;
+    margin: 0 auto;
+    max-width: 270px;
+}
+
+.quirk {
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: #536C4B;
+}
 @media (min-width: 1025px) {
     .header-content {
         flex-direction: row;
@@ -545,4 +630,12 @@ margin: 0;
 .food-map {
     margin: 0px;
 }
+.authors-section h2 {
+        font-size: 45px;
+    }
+
+    .authors-section p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
 }
